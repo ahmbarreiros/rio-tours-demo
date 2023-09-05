@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./../public/assets/css/main.css";
+import "/assets/images/jardimbotanicojpg.jpg";
 import { Header } from "./Header";
 import Inicio from "./Inicio";
 import Explore from "./Explore";

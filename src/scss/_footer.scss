@@ -7,29 +7,26 @@ footer {
     height: 30vh;
     display: flex;
     flex-direction: column;
-    background: linear-gradient(
-            217deg,
-            rgba(4, 94, 4, 0.8),
-            rgba(201, 165, 87, 0.8) 70.71%
-        )
+    background: linear-gradient(-180deg, #c4940673, 20%, $secundaria-clara 90%);
+
     justify-content: center;
     align-items: center;
     nav {
         margin: 20px;
         font-size: 20px;
         ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
             list-style: none;
             li > a {
+                padding: 20px;
                 text-decoration: none;
-                color: $secundaria-clara;
+                color: $secundaria-escura;
 
                 &:hover {
                     color: $verde-claro;
                     transition: 0.25s;
-
-                    &::before {
-                        content: "-";
-                    }
                 }
             }
         }
@@ -38,16 +35,18 @@ footer {
         .contato {
             a {
                 text-decoration: none;
-                color: rgb(15, 15, 129);
+                color: #161616;
+                padding: 20px;
 
                 &:hover {
-                    text-decoration: underline;
+                    color: #029b02;
                     transition: 0.25s;
                 }
             }
         }
         .copyright {
-            color: $secundaria-clara;
+            text-align: center;
+            color: $secundaria-escura;
             .copy-riotours {
                 color: $verde-claro;
                 .copy-destaque {
