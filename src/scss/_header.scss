@@ -1,0 +1,48 @@
+@use "config" as *;
+
+header {
+    z-index: 100;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0%;
+    left: 0%;
+    background-color: $secundaria-clara;
+    box-shadow: 11px 4px 30px -7px rgba(0, 0, 0, 0.6);
+    .logo {
+        padding: 15px;
+        margin-left: 40px;
+        height: 100%;
+        text-decoration: none;
+        color: $verde-escuro;
+        font-weight: bold;
+        font-family: "Roboto Slab";
+        .letra-destacada {
+            color: $verde-claro;
+        }
+    }
+    .nav-header > ul {
+        display: flex;
+        padding: 20px;
+        justify-content: space-between;
+
+        li {
+            list-style-type: none;
+            margin-right: 30px;
+
+            a {
+                text-decoration: none;
+                font-size: 1.15rem;
+                color: $verde-escuro;
+                font-weight: bold;
+                font-family: "Roboto Slab";
+
+                &:hover {
+                    color: $verde-claro;
+                    transition: all 0.2s ease-in-out;
+                }
+            }
+        }
+    }
+}

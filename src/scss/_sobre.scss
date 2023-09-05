@@ -1,0 +1,46 @@
+@use "config" as *;
+
+.sobre {
+    position: relative;
+    min-height: 100vh;
+    padding-top: 25px;
+    h2 {
+        text-align: center;
+        margin-top: 15vh;
+        margin-bottom: 0;
+        color: $verde-escuro;
+        font-size: 32px;
+        text-decoration: overline;
+    }
+    .sobreWrapper {
+        // #c2b28073
+        // background: linear-gradient(180deg, #fff 0%, #c2b28073 85%);
+        background: linear-gradient(-180deg, #fff, 40%, #c4940673 90%);
+        height: 100vh;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 20px 20px 20px;
+        min-height: calc(100vh - 50vh);
+        margin-top: -15vh;
+        img {
+            padding: 20px;
+            max-width: 1000px;
+            max-height: 600px;
+            border-radius: 25px;
+        }
+        .sobreTexto {
+            padding: 20px;
+            // flex-grow: 1;
+            align-self: center;
+            max-width: 50%;
+            text-align: left;
+            color: #222;
+            span > a {
+                color: rgba(0, 0, 255, 0.589);
+            }
+        }
+    }
+}

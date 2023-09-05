@@ -1,0 +1,25 @@
+$verde-escuro: #006400;
+$verde-claro: #38b000;
+$secundaria-clara: #c8c8c8;
+$secundaria-escura: #4c3b4d;
+$secundaria-escura2: #4a85b3;
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Slab";
+}
+
+@mixin media-md {
+    @media screen and (max-width: 1440px) {
+        @content;
+    }
+}
+
+@mixin media-xs {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}

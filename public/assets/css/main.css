@@ -1,0 +1,313 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap");
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Slab";
+}
+
+header {
+  z-index: 100;
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0%;
+  left: 0%;
+  background-color: #c8c8c8;
+  box-shadow: 11px 4px 30px -7px rgba(0, 0, 0, 0.6);
+}
+header .logo {
+  padding: 15px;
+  margin-left: 40px;
+  height: 100%;
+  text-decoration: none;
+  color: #006400;
+  font-weight: bold;
+  font-family: "Roboto Slab";
+}
+header .logo .letra-destacada {
+  color: #38b000;
+}
+header .nav-header > ul {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+}
+header .nav-header > ul li {
+  list-style-type: none;
+  margin-right: 30px;
+}
+header .nav-header > ul li a {
+  text-decoration: none;
+  font-size: 1.15rem;
+  color: #006400;
+  font-weight: bold;
+  font-family: "Roboto Slab";
+}
+header .nav-header > ul li a:hover {
+  color: #38b000;
+  transition: all 0.2s ease-in-out;
+}
+
+.inicio {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(../images/pexels-florencia-potter-351283.jpg) center top;
+  background-size: cover;
+  background-position: center;
+}
+.inicio .inicio-titulo {
+  color: #006400;
+  font-weight: bold;
+  font-size: 4rem;
+  font-family: "Roboto Slab";
+}
+.inicio .inicio-titulo .letra-destacada {
+  color: #38b000;
+}
+.inicio .inicio-subtitulo {
+  position: relative;
+  font-size: 1.2rem;
+  left: 70px;
+  color: #c8c8c8;
+  font-family: "Roboto Slab";
+  padding-bottom: 30px;
+}
+.inicio .inicio-subtitulo::before {
+  margin-right: 20px;
+  color: #38b000;
+  content: "aaaaaaaaa";
+  background-color: #38b000;
+  width: 100%;
+  z-index: -100;
+}
+.inicio .btn {
+  padding: 14px 40px;
+  font-size: 20px;
+  color: #eee;
+  font-family: "Roboto Slab";
+  background-color: #38b000;
+  border: 1px solid #38b000;
+  border-radius: 2px;
+}
+.inicio .btn::after {
+  content: "!";
+}
+.inicio .btn:hover {
+  cursor: pointer;
+  transition: ease-out 0.25s;
+  background-color: #006400;
+  border: 1px solid #006400;
+}
+
+.explore {
+  position: relative;
+  min-height: 85vh;
+  padding-top: 5px;
+}
+.explore h2 {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 15vh;
+  position: relative;
+  top: 320%;
+  color: #006400;
+  font-size: 32px;
+  text-decoration: overline;
+}
+.explore .tours {
+  background: #fff;
+  background-position: center;
+  background-size: cover;
+  padding: 100px 0 100px 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  max-width: 100%;
+  flex-wrap: wrap;
+}
+.explore .tours .tour {
+  max-width: 30%;
+  min-height: 50vh;
+  margin-right: 33px;
+  background-color: #161616;
+  border-radius: 5px;
+  box-shadow: 9px 10px 15px -1px rgb(71, 71, 71);
+}
+.explore .tours .tour .tourImage {
+  width: 100%;
+  height: 50%;
+  border-radius: 5px;
+  box-shadow: 0px 6px 30px -12px rgba(0, 0, 0, 0.75);
+  margin-bottom: 30px;
+}
+.explore .tours .tour #tourImg1 {
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(../images/paodeacucar.jpg) center top;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.explore .tours .tour #tourImg2 {
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(../images/cristo.jpg) center top;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.explore .tours .tour #tourImg3 {
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(../images/jardimbotanicojpg.jpg) center top;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.explore .tours .tour .cardTitle {
+  text-align: center;
+  font-size: 24px;
+  color: #38b000;
+}
+.explore .tours .tour .cardTitle::before, .explore .tours .tour .cardTitle::after {
+  content: "──";
+}
+.explore .tours .tour .cardDesc {
+  font-size: 14px;
+  text-align: center;
+  color: #c8c8c8;
+  padding: 0 20px 0 30px;
+}
+.explore .tours .tour .data {
+  text-align: right;
+  font-size: 18px;
+  color: #c8c8c8;
+  padding: 15px 20px 10px 0;
+}
+
+.sobre {
+  position: relative;
+  min-height: 100vh;
+  padding-top: 25px;
+}
+.sobre h2 {
+  text-align: center;
+  margin-top: 15vh;
+  margin-bottom: 0;
+  color: #006400;
+  font-size: 32px;
+  text-decoration: overline;
+}
+.sobre .sobreWrapper {
+  background: linear-gradient(-180deg, #fff, 40%, rgba(196, 148, 6, 0.4509803922) 90%);
+  height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px 20px 20px;
+  min-height: 50vh;
+  margin-top: -15vh;
+}
+.sobre .sobreWrapper img {
+  padding: 20px;
+  max-width: 1000px;
+  max-height: 600px;
+  border-radius: 25px;
+}
+.sobre .sobreWrapper .sobreTexto {
+  padding: 20px;
+  align-self: center;
+  max-width: 50%;
+  text-align: left;
+  color: #222;
+}
+.sobre .sobreWrapper .sobreTexto span > a {
+  color: rgba(0, 0, 255, 0.589);
+}
+
+footer {
+  bottom: 0%;
+  left: 0%;
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(217deg, rgba(4, 94, 4, 0.8), rgba(201, 165, 87, 0.8) 70.71%), linear-gradient(127deg, rgba(4, 94, 4, 0.8), rgba(143, 248, 143, 0) 70.71%), linear-gradient(336deg, rgba(148, 107, 20, 0.8), rgba(238, 206, 138, 0.8) 70.71%);
+  justify-content: center;
+  align-items: center;
+}
+footer nav {
+  margin: 20px;
+  font-size: 20px;
+}
+footer nav ul {
+  list-style: none;
+}
+footer nav ul li > a {
+  text-decoration: none;
+  color: #c8c8c8;
+}
+footer nav ul li > a:hover {
+  color: #38b000;
+  transition: 0.25s;
+}
+footer nav ul li > a:hover::before {
+  content: "-";
+}
+footer .footerWrapper .contato a {
+  text-decoration: none;
+  color: rgb(15, 15, 129);
+}
+footer .footerWrapper .contato a:hover {
+  text-decoration: underline;
+  transition: 0.25s;
+}
+footer .footerWrapper .copyright {
+  color: #c8c8c8;
+}
+footer .footerWrapper .copyright .copy-riotours {
+  color: #38b000;
+}
+footer .footerWrapper .copyright .copy-riotours .copy-destaque {
+  color: #029b02;
+}
+
+@media screen and (max-width: 1440px) {
+  .explore .tours .tour {
+    max-width: 45%;
+    margin: 20px;
+    max-height: 250px;
+  }
+}
+@media screen and (max-width: 768px) {
+  * {
+    max-width: 768px;
+    overflow-x: hidden;
+  }
+  header > .nav-header > ul {
+    flex-direction: column;
+  }
+  header > .nav-header > ul li > a {
+    font-size: 0.95rem;
+  }
+  .inicio > .inicio-subtitulo {
+    font-size: 0.95rem;
+    left: 30px;
+  }
+  .explore .tours .tour {
+    max-width: 85%;
+    margin: 20px;
+    max-height: 300px;
+  }
+}
+main {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #fff;
+}/*# sourceMappingURL=main.css.map */

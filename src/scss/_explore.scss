@@ -1,0 +1,102 @@
+@use "config" as *;
+
+.explore {
+    position: relative;
+    min-height: 85vh;
+    padding-top: 5px;
+    h2 {
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 15vh;
+        position: relative;
+        top: 320%;
+        color: $verde-escuro;
+        font-size: 32px;
+        text-decoration: overline;
+    }
+
+    .tours {
+        background: #fff;
+        background-position: center;
+        background-size: cover;
+        padding: 100px 0 100px 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        // margin-top: 50px;
+        max-width: 100%;
+        flex-wrap: wrap;
+        // min-width: 33%;
+
+        .tour {
+            .tourImage {
+                width: 100%;
+                height: 50%;
+                border-radius: 5px;
+                box-shadow: 0px 6px 30px -12px rgba(0, 0, 0, 0.75);
+                margin-bottom: 30px;
+            }
+            #tourImg1 {
+                background: linear-gradient(
+                        135deg,
+                        rgba(0, 0, 0, 0.7),
+                        rgba(0, 0, 0, 0.5)
+                    ),
+                    url(../images/paodeacucar.jpg) center top;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            #tourImg2 {
+                background: linear-gradient(
+                        135deg,
+                        rgba(0, 0, 0, 0.7),
+                        rgba(0, 0, 0, 0.5)
+                    ),
+                    url(../images/cristo.jpg) center top;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            #tourImg3 {
+                background: linear-gradient(
+                        135deg,
+                        rgba(0, 0, 0, 0.7),
+                        rgba(0, 0, 0, 0.5)
+                    ),
+                    url(../images/jardimbotanicojpg.jpg) center top;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .cardTitle {
+                text-align: center;
+                font-size: 24px;
+                color: $verde-claro;
+
+                &::before,
+                &::after {
+                    content: "──";
+                }
+            }
+            .cardDesc {
+                font-size: 14px;
+                text-align: center;
+                color: $secundaria-clara;
+                padding: 0 20px 0 30px;
+            }
+            .data {
+                text-align: right;
+                font-size: 18px;
+                color: $secundaria-clara;
+                padding: 15px 20px 10px 0;
+            }
+            max-width: 30%;
+            min-height: calc(100vh - 50vh);
+            margin-right: 33px;
+            background-color: #161616;
+            border-radius: 5px;
+            box-shadow: 9px 10px 15px -1px rgb(71, 71, 71);
+        }
+    }
+}

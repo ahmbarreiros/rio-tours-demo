@@ -1,0 +1,40 @@
+@use "config" as *;
+
+@include media-md {
+    .explore {
+        .tours {
+            .tour {
+                max-width: 45%;
+                margin: 20px;
+                max-height: 250px;
+            }
+        }
+    }
+}
+
+@include media-xs {
+    * {
+        max-width: 768px;
+        overflow-x: hidden;
+    }
+    header > .nav-header > ul {
+        flex-direction: column;
+        li > a {
+            font-size: 0.95rem;
+        }
+    }
+
+    .inicio > .inicio-subtitulo {
+        font-size: 0.95rem;
+        left: 30px;
+    }
+    .explore {
+        .tours {
+            .tour {
+                max-width: 85%;
+                margin: 20px;
+                max-height: 300px;
+            }
+        }
+    }
+}

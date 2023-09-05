@@ -1,0 +1,61 @@
+@use "config" as *;
+
+.inicio {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+        url(../images/pexels-florencia-potter-351283.jpg) center top;
+    background-size: cover;
+    background-position: center;
+
+    .inicio-titulo {
+        color: $verde-escuro;
+        font-weight: bold;
+        font-size: 4rem;
+        font-family: "Roboto Slab";
+        .letra-destacada {
+            color: $verde-claro;
+        }
+    }
+    .inicio-subtitulo {
+        position: relative;
+        font-size: 1.2rem;
+        left: 70px;
+        color: $secundaria-clara;
+        font-family: "Roboto Slab";
+        padding-bottom: 30px;
+        &::before {
+            margin-right: 20px;
+            color: $verde-claro;
+            content: "aaaaaaaaa";
+            background-color: $verde-claro;
+            width: 100%;
+            z-index: -100;
+        }
+    }
+
+    .btn {
+        padding: 14px 40px;
+        // width: 250px;
+        font-size: 20px;
+        color: #eee;
+        font-family: "Roboto Slab";
+        background-color: $verde-claro;
+        border: 1px solid $verde-claro;
+        border-radius: 2px;
+
+        &::after {
+            content: "!";
+        }
+
+        &:hover {
+            cursor: pointer;
+            transition: ease-out 0.25s;
+            background-color: $verde-escuro;
+            border: 1px solid $verde-escuro;
+        }
+    }
+}
